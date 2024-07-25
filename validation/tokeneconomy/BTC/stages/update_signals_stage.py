@@ -2,6 +2,7 @@ import numpy as np
 import math
 from ..constants import constants
 
+# SYSTEM DYNAMIC 3: BLOCK REWARDS
 """
     'update_signals': {
         'policies': {

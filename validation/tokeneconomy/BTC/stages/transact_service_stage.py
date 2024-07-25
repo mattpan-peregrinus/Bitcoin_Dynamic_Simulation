@@ -3,6 +3,8 @@ import pandas as pd
 from ..constants import constants
 import math
 
+# SYSTEM DYNAMIC 2: PRICE AND QUANTITY 
+# SYSTEM DYNAMIC 5: Signal 1, C, cost in fiat to provide unit service 
 """
     'transact_service': {
         'policies': {

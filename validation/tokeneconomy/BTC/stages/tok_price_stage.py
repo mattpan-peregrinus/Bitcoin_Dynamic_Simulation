@@ -1,5 +1,7 @@
 from ..constants import constants
 
+# SYSTEM DYNAMIC 4: SPECULATION PRICE 
+# SYSTEM DYNAMIC 5: Signal 3, R(t), miner profitability 
 """
     'K_price': {
         'policies': {

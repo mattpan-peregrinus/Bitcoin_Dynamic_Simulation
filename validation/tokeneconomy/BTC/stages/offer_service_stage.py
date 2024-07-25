@@ -1,6 +1,7 @@
 import numpy as np
 from ..constants import constants
 
+# SYSTEM DYNAMIC 1: SERVICE SUPPLY/DEMAND
 """    
     'offer_service': {
         'policies': {

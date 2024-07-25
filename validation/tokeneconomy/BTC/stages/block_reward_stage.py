@@ -2,6 +2,7 @@
 import numpy as np
 from ..constants import constants
 
+# SYSTEM DYNAMIC 5: Signal 2, V, revenue earned by miner per fiat token invested
 """
     'block_reward': {
         'policies': {
