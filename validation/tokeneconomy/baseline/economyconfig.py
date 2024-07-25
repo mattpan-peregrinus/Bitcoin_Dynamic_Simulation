@@ -4,7 +4,7 @@ from datetime import timedelta
 import numpy as np
 from typing import Dict, List
 
-from cadCAD.configuration import append_configs
+from cadCAD.configuration import Experiment
 from cadCAD.configuration.utils import bound_norm_random, ep_time_step, config_sim
 from .constants import constants
 from .initial_values import initial_values
@@ -39,17 +39,18 @@ def time_model(_g, step, sL, s, _input):
     x = ep_time_step(s, dt_str=s['timestamp'], fromat_str=ts_format, _timedelta=t_delta)
     return ('timestamp', x)
 
-raw_exogenous_states = {
+'''raw_exogenous_states = {
     'timestamp': time_model
-}
+}'''
 
 env_processes = {}
 
-append_configs(
+exp = Experiment()
+exp.append_configs(
     sim_configs=sim_config,
     initial_state=genesis_states,
     seeds=seeds,
-    raw_exogenous_states=raw_exogenous_states,
+    # raw_exogenous_states=raw_exogenous_states,
     env_processes=env_processes,
     partial_state_update_blocks=partial_state_update_block
 )
